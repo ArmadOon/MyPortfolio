@@ -9,22 +9,33 @@
   font-weight: bold;
 }
 
-.centrovany {
-  text-align: center;
+body {
+  background: #f9f9f9;
+  color: #414042;
+  margin: 0;
+  padding: 100px 0px 0px 0px;
+  box-sizing: border-box;
+  font: 14px "Poppins";
+  min-width: 960px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 body > header {
   height: 100px;
   position: fixed;
   display: flex;
   justify-content: space-evenly;
   top: 0;
-  background: #00386B;
+  background: #00386b;
   color: white;
   width: 100%;
   z-index: 1;
 }
+
 #logo {
-  background: url('obrazky/coding.png') no-repeat;
+  background: url("obrazky/dev.png") no-repeat;
   background-size: 40px 40px;
   height: 40px;
   margin: auto 0 auto 20px;
@@ -32,19 +43,27 @@ body > header {
   flex-direction: column;
   justify-content: center;
 }
+
 #logo > * {
   margin: 0 0 0 50px;
 }
+
 #logo h1 {
   font-weight: normal;
   font-size: 1.5em;
   line-height: 1.2em;
-  color: white;
 }
+
 #logo h1 span {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+#logo small {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
 nav ul {
   margin: 0;
   height: 100%;
@@ -52,41 +71,60 @@ nav ul {
   list-style-type: none;
   display: flex;
 }
+
 nav ul li {
   padding: 0 25px;
   margin: 0 5px;
   font-size: 1em;
   line-height: 4.3em;
 }
+
 nav ul a {
   color: white;
   padding: 8px 0;
   text-decoration: none;
   text-transform: uppercase;
 }
-nav ul a:hover, .aktivni a {
-  border-bottom: 2px solid #EF6534;
-}
-body {
-  font-family: "Poppins";
-  font-size: 14px;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
+
+nav ul a:hover,
+.aktivni a {
+  border-bottom: 2px solid #ef6534;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.kontakt-tlacitko {
+  background: #ef6534;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.reference-tlacitko {
+  background: #70b73a;
+  color: white;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+.kontakt-tlacitko:hover,
+.reference-tlacitko:hover {
+  filter: brightness(115%) contrast(85%);
+  border: 0;
+}
+
+.centrovany {
   text-align: center;
-  color: #0a294b;
 }
 
-h2 {
-  font-size: 1.7em;
+#centrovac {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+article {
+  padding: 80px 50px;
+  flex: 1;
 }
 
 article h2 {
@@ -117,6 +155,10 @@ article header {
   background: none;
 }
 
+article section {
+  margin: 0;
+}
+
 article section p {
   margin-bottom: 1.5em;
   line-height: 1.8em;
@@ -125,13 +167,12 @@ article section p {
 article section a {
   color: #ef6534;
 }
-#centrovac {
-  margin: 0 auto;
-  max-width: 960px;
+
+article section .tlacitko-odstavec {
+  margin-top: 3em;
 }
 
 .domu-article {
-  
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 100px max-content;
@@ -145,16 +186,39 @@ article section a {
   filter: grayscale(1);
 }
 
-article {
-  padding: 80px 50px;
-  flex: 1;
-}
-.reference-tlacitko {
-  background: #70B73A;
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  height: 100px;
   color: white;
-  font-size: 0.9em;
+  background: #414042;
+  padding: 50px 0 0 0;
+  clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+}
+
+footer a {
+  color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 12px 25px;
-  border-radius: 25px;
+}
+
+.cistic {
+  clear: both;
+}
+
+#dovednosti td {
+  width: 33%;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid gray;
+}
+
+#dovednosti {
+  border-collapse: collapse;
+}
+
+#reference img {
+  border: 1px solid gray;
+  padding: 6px;
+  box-shadow: 3px 3px 6px #999999;
+  margin-right: 6px;
 }

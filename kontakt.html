@@ -9,13 +9,48 @@
 </head>
  
 <body>
-	<h1>Kontakt</h1>
-	<p><img src="obrazky/email.png" alt="email" /></p>
-	<p>
-	Pokud mi chcete něco sdělit, napište mi email na <strong>pluhar.martin@outlook.com</strong>.
-	</p>
-	
-	<p><a href="index.html">Zpět na hlavní stranu</a></p>
+	<header>
+		<div id="logo">
+		  <h1>Martin<span>Pluhař</span></h1>
+		  <small>webdeveloper</small>
+		</div>
+		<nav>
+		  <ul>
+			<li class="aktivni"><a href="index.html">Domů</a></li>
+			<li><a href="omne.html">O mně</a></li>
+			<li><a href="dovednosti.html">Dovednosti</a></li>
+			<li><a href="reference.html">Reference</a></li>
+			<li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	  <article>
+		<div id="centrovac">
+			<header>
+				<h1>Kontakt</h1>
+			</header>
+
+			<section>
+				<p>
+				<img src="obrazky/email.png" alt="email" class="vlevo" />
+				Pokud mi chcete něco sdělit, napište mi email na <strong>pluhar.martin@outlook.com</strong> nebo využijte formuláře níže.
+				</p>
+
+				<p class="centrovany">
+				<!-- itnetwork.cz MAILFORM -->
+				<iframe frameborder="0" scrolling="no" width="500px" height="220px"
+				src="https://www.itnetwork.cz/api/Service-MailForm/6217682d3b3247.61245909">
+				</iframe>
+				<!-- itnetwork.cz MAILFORM END -->
+				</p>
+			</section>
+			<div class="cistic"></div>
+		</div>
+	</article>
+	<footer>
+		Vytvořil &copy;Martin Pluhař 2022 pro
+		<a href="https://itnetwork.cz">itnetwork.cz</a>
+	  </footer>
 </body>
  
 </html>
